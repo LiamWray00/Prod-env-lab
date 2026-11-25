@@ -18,6 +18,15 @@ I can destroy the server and rebuild it with one command, restore from backup wi
 Wrong gateway, bad DNS record, firewall rule that silently drops a protocol, full disk, killed service, corrupted config. Each has a case file.
 
 ## Status
+In progress. See [CHANGELOG.md](CHANGELOG.md) for dated changes.
 
+- [x] Two network segments (vmbr1 servers, vmbr2 clients) on Proxmox
+- [x] Router VM with interfaces on both segments, IP forwarding enabled ([network/](network/))
+- [ ] Firewall rules (nftables)
+- [ ] Internal DNS zone
+- [ ] DHCP and NAT
+- [ ] Web service via Ansible
+- [ ] Monitoring, logging, backups
+- [ ] Reliability target and failure drills
 
 ## What I would change
